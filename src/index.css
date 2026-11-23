@@ -43,3 +43,14 @@ input, select, textarea, button {
 .safe-top {
   padding-top: env(safe-area-inset-top, 0px);
 }
+
+/* Invert native date picker indicator icon to crisp white */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
+}
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}

@@ -154,6 +154,7 @@ export default function BookingBar() {
               type="date"
               value={travelDate}
               onChange={(e) => setTravelDate(e.target.value)}
+              style={{ colorScheme: 'dark' }}
               className="w-full bg-charcoal/80 border border-white/15 rounded-xl px-3.5 py-2.5 text-white text-sm focus:outline-none focus:border-gold transition-colors cursor-pointer"
             />
           </div>
