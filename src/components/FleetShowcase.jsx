@@ -17,8 +17,8 @@ export default function FleetShowcase() {
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal tracking-tight">
             Our Premium Travel Fleet
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-charcoal-light font-normal leading-relaxed">
-            Choose the right vehicle for your group size and luggage needs. All cars are equipped with dual climate control, music system, and mountain safety equipment.
+          <p className="mt-2 text-sm sm:text-base text-charcoal-light font-normal">
+            Clean, AC vehicles tailored for hill roads, group travel, and luggage space.
           </p>
         </div>
 

@@ -16,8 +16,8 @@ export default function AirportRoutes() {
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal tracking-tight">
             Bagdogra Airport (IXB) Cab Services
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-charcoal-light font-normal leading-relaxed">
-            Direct, comfortable transfers straight from the Bagdogra Airport arrival gate to your hill hotel. Free flight delay monitoring so you are never left waiting.
+          <p className="mt-2 text-sm sm:text-base text-charcoal-light font-normal">
+            Direct transfers from Bagdogra arrival gate to hill hotels with free flight delay tracking.
           </p>
 
           {/* Airport Guarantee Badges */}

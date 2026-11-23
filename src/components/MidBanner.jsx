@@ -20,8 +20,8 @@ export default function MidBanner() {
           your total peace of mind in the hills.
         </h3>
 
-        <p className="mt-3 text-sm sm:text-base text-cream/75 max-w-2xl mx-auto font-light">
-          A wide range of A/C and non-A/C luxury cabs for personal, family and corporate use. Available for instant hire across Siliguri, Darjeeling, Kalimpong & Dooars.
+        <p className="mt-2 text-sm text-cream/75 max-w-lg mx-auto font-light">
+          Comfortable AC cabs for family, corporate, and leisure hill journeys.
         </p>
 
         {/* Large Phone Call CTA */}

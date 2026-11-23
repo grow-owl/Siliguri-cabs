@@ -7,22 +7,22 @@ export default function WhyChooseUs() {
     {
       icon: ShieldCheck,
       title: 'Mountain-Expert Chauffeurs',
-      desc: 'All our drivers possess 8+ years of steep hill driving experience across Darjeeling, Sikkim, and Bhutan hairpin curves.'
+      desc: 'Licensed hill drivers with 8+ years experience in mountain terrain.'
     },
     {
       icon: Clock,
       title: '100% Punctual Pickups',
-      desc: 'Early 4:00 AM sunrise trips to Tiger Hill or late-night airport arrivals — our cab is waiting at your pickup point ahead of time.'
+      desc: 'Guaranteed on-time pickups for early sunrises and late flight arrivals.'
     },
     {
       icon: BadgePercent,
       title: 'Transparent, Fixed Fares',
-      desc: 'No hidden toll, parking or permit surprises. You receive an all-inclusive clear quote upfront before booking.'
+      desc: 'All-inclusive upfront quotes with zero hidden charges or surge rates.'
     },
     {
       icon: Car,
       title: 'Sanitized & Maintained Fleet',
-      desc: 'Regularly serviced, air-conditioned vehicles with pristine interiors, powerful mountain engines, and luggage roof carriers.'
+      desc: 'Clean, AC vehicles with spacious luggage carriers and regular safety checks.'
     }
   ];
 
@@ -48,8 +48,8 @@ export default function WhyChooseUs() {
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
             Why Discerning Travelers Choose <span className="text-gold">HillWay Cabs</span>
           </h2>
-          <p className="mt-4 text-cream/75 text-sm sm:text-lg font-light leading-relaxed">
-            Travel in the Himalayan foothills demands trust, verified hill competence, and reliable vehicles. We guarantee peace of mind on every turn.
+          <p className="mt-2 text-cream/75 text-sm sm:text-base font-light">
+            Experienced hill drivers, verified safety, and transparent pricing on every route.
           </p>
         </div>
 

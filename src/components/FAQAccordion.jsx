@@ -23,8 +23,8 @@ export default function FAQAccordion() {
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal tracking-tight">
             Frequently Asked Questions
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-charcoal-light leading-relaxed">
-            Everything you need to know about booking, airport transfers, vehicle types, and hill travel with HillWay Cabs.
+          <p className="mt-2 text-sm text-charcoal-light">
+            Quick answers to common questions about bookings, fares, and hill travel.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function FAQAccordion() {
               Have another question not covered here?
             </h4>
             <p className="text-xs sm:text-sm text-charcoal-light mt-0.5">
-              Our 24x7 Siliguri booking team is happy to assist you with routes, timing, and fares.
+              Our 24x7 booking desk is ready to assist you anytime.
             </p>
           </div>
           <a

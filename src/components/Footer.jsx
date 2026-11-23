@@ -42,7 +42,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-cream/70 leading-relaxed font-light">
-              Siliguri's dedicated premium cab and chauffeur service. Specializing in outstation hill routes, Bagdogra Airport transfers, and custom Sikkim-Darjeeling tour itineraries.
+              Premium outstation cabs and Bagdogra Airport transfers across North Bengal and Sikkim.
             </p>
             <p className="text-xs font-semibold text-gold italic">
               "{siteConfig.tagline}"

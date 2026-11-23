@@ -7,19 +7,19 @@ export default function FinalCTA() {
   const ctaPillars = [
     {
       title: "Affordable Fares",
-      desc: "Enjoy budget-friendly mountain travel rates without compromising on car quality."
+      desc: "Budget-friendly hill rates with zero hidden charges."
     },
     {
       title: "Courteous Chauffeurs",
-      desc: "Experience service with a smile from our polite, professional & verified hill drivers."
+      desc: "Polite, experienced, and verified mountain drivers."
     },
     {
       title: "Clean & Sanitized Cabs",
-      desc: "Pristine vehicles thoroughly cleaned and sanitized for your well-being."
+      desc: "Spotless interiors with working dual climate control."
     },
     {
       title: "Well-Maintained Cars",
-      desc: "Regular mechanical inspections to guarantee zero breakdowns on mountain trips."
+      desc: "Regular safety checks for smooth mountain trips."
     }
   ];
 
@@ -37,12 +37,12 @@ export default function FinalCTA() {
           Book Affordable & Hassle-Free Taxi Service for <span className="text-gold">Airport, Outstation & Local Hire</span>
         </h2>
 
-        <p className="mt-4 text-base sm:text-lg text-cream/80 font-normal max-w-2xl mx-auto">
-          Dedicated 24x7 customer support desk. Confirm your ride in less than 2 minutes via WhatsApp or a direct call.
+        <p className="mt-2 text-sm sm:text-base text-cream/80 max-w-lg mx-auto font-light">
+          Confirm your ride in 2 minutes via WhatsApp or direct call. 24x7 support.
         </p>
 
         {/* 4 Feature Badges */}
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
           {ctaPillars.map((item, idx) => (
             <div key={idx} className="bg-charcoal-surface text-white rounded-xl p-5 border border-white/10 shadow-lg text-left hover:border-gold/40 transition-colors">
               <div className="w-8 h-8 rounded-lg bg-gold text-charcoal flex items-center justify-center font-bold text-xs mb-3">
@@ -51,7 +51,7 @@ export default function FinalCTA() {
               <h4 className="font-heading font-bold text-base text-gold mb-1">
                 {item.title}
               </h4>
-              <p className="text-xs text-cream/70 leading-relaxed font-light">
+              <p className="text-xs text-cream/70 font-light">
                 {item.desc}
               </p>
             </div>

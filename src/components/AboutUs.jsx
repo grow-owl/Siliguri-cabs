@@ -50,12 +50,12 @@ export default function AboutUs() {
               Your Trusted Mountain Travel Partner in Siliguri
             </h2>
 
-            <p className="text-charcoal-light text-base leading-relaxed">
-              Based in the gateway city of <strong>Siliguri</strong>, HillWay Cabs was founded with a singular purpose: to deliver dependable, transparent, and refined travel experiences across the Himalayan foothills.
+            <p className="text-charcoal-light text-sm sm:text-base leading-relaxed">
+              Based in Siliguri, HillWay Cabs provides reliable, transparent, and comfortable private taxi services across North Bengal and Sikkim.
             </p>
 
             <p className="text-charcoal-light text-sm sm:text-base leading-relaxed">
-              Whether you are landing at <strong>Bagdogra Airport (IXB)</strong>, stepping off at <strong>NJP Railway Station</strong>, or heading up towards the majestic tea gardens of Darjeeling and the sacred valleys of Sikkim, we ensure a seamless and safe journey with zero compromises on vehicle quality.
+              From Bagdogra Airport and NJP station to Darjeeling, Gangtok, and Dooars, we ensure safe mountain journeys with verified local chauffeurs.
             </p>
 
             {/* Checklist */}
@@ -84,7 +84,7 @@ export default function AboutUs() {
                 “{siteConfig.tagline}”
               </p>
               <p className="text-xs text-charcoal-light mt-1">
-                Every booking is personally monitored to ensure your family's travel is punctual, comfortable, and memorable.
+                Dedicated to punctual, comfortable, and stress-free mountain journeys.
               </p>
             </div>
           </div>

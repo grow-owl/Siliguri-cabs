@@ -28,8 +28,8 @@ export default function Hero() {
         </h1>
 
         {/* Subtitle / Promise */}
-        <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-cream/80 max-w-2xl mx-auto font-light leading-relaxed">
-          Punctual, transparent, and private cab transfers connecting <strong className="text-white font-semibold">Siliguri, NJP, and Bagdogra Airport</strong> to Darjeeling, Gangtok, Kalimpong, Bhutan & Dooars.
+        <p className="mt-3 sm:mt-4 text-sm sm:text-base text-cream/80 max-w-xl mx-auto font-light leading-relaxed">
+          Private cabs from <strong className="text-white font-semibold">Siliguri & Bagdogra</strong> to Darjeeling, Gangtok & Dooars with transparent fares.
         </p>
 
         {/* Quick Highlights Row */}

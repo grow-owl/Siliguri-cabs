@@ -29,8 +29,8 @@ export default function OutstationRoutes() {
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal tracking-tight">
             Siliguri to Outstation Cabs
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-charcoal-light font-normal leading-relaxed">
-            Reliable, verified private taxis from Siliguri Junction, Town, & NJP Railway Station. Fixed pricing, no surge rates, and 24x7 customer support.
+          <p className="mt-2 text-sm sm:text-base text-charcoal-light font-normal">
+            Private outstation cabs from Siliguri & NJP with fixed rates and 24/7 support.
           </p>
 
           {/* Filter Pills */}
@@ -66,7 +66,7 @@ export default function OutstationRoutes() {
               Need a Customized Hill Tour or Multi-Day Package?
             </h4>
             <p className="text-xs sm:text-sm text-charcoal-light mt-0.5">
-              We arrange bespoke itineraries for North Sikkim, Lachung, Yumthang & Pelling with full permit handling.
+              Custom itineraries for Sikkim & Darjeeling with complete permit assistance.
             </p>
           </div>
           <a

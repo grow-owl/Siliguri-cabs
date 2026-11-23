@@ -16,8 +16,8 @@ export default function Reviews() {
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal tracking-tight">
             Read What Our Travelers Say
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-charcoal-light leading-relaxed">
-            Real feedback from tourists, families, and business travelers who explored North Bengal and Sikkim with HillWay Cabs.
+          <p className="mt-2 text-sm text-charcoal-light">
+            Genuine feedback from travelers who explored the hills with us.
           </p>
 
           {/* Google & Trip Trust Badges */}
