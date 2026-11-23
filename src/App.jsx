@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WhyChooseUs from './components/WhyChooseUs';
 import OutstationRoutes from './components/OutstationRoutes';
-import MidBanner from './components/MidBanner';
 import AirportRoutes from './components/AirportRoutes';
 import FleetShowcase from './components/FleetShowcase';
 import AboutUs from './components/AboutUs';
@@ -26,14 +25,11 @@ export default function App() {
         {/* Siliguri to Outstation Cabs */}
         <OutstationRoutes />
 
-        {/* Why Discerning Travelers Choose HillWay */}
-        <WhyChooseUs />
-
-        {/* Mid-page Safety & Instant Booking Banner */}
-        <MidBanner />
-
         {/* Bagdogra Airport Transfer Services */}
         <AirportRoutes />
+
+        {/* Why Discerning Travelers Choose HillWay */}
+        <WhyChooseUs />
 
         {/* Fleet Showcase */}
         <FleetShowcase />

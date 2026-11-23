@@ -46,7 +46,7 @@ export default function FleetShowcase() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent" />
                     
-                    <span className="absolute top-3 right-3 bg-gold text-charcoal text-[11px] font-bold px-3 py-1 rounded-full shadow-md uppercase tracking-wider">
+                    <span className="absolute top-3 right-3 bg-black/40 backdrop-blur-md border border-white/25 text-gold text-[11px] font-bold px-3 py-1 rounded-full shadow-md uppercase tracking-wider">
                       {car.badge}
                     </span>
 

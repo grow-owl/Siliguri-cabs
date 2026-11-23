@@ -13,7 +13,7 @@ export default function RouteCard({ route, isAirport = false }) {
 
   return (
     <div className="group bg-white rounded-2xl overflow-hidden border border-cream-dark/60 hover:border-gold/60 shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between">
-      {/* Top Image with Price Badge */}
+      {/* Top Image with Glass Price Badge */}
       <div className="relative h-44 sm:h-48 w-full overflow-hidden bg-charcoal">
         <img
           src={route.image}
@@ -21,11 +21,11 @@ export default function RouteCard({ route, isAirport = false }) {
           loading="lazy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-black/20 pointer-events-none" />
 
-        {/* Pricing on top of Image */}
-        <div className="absolute bottom-2.5 right-2.5 bg-charcoal/90 backdrop-blur-md border border-gold/40 px-3 py-1 rounded-lg text-right shadow-lg">
-          <span className="text-[9px] text-cream/70 uppercase tracking-wider block font-medium leading-none">Starts from</span>
+        {/* Glassmorphism Price Badge on Top Left */}
+        <div className="absolute top-3 left-3 bg-black/40 backdrop-blur-md border border-white/25 px-3 py-1.5 rounded-xl text-left shadow-lg">
+          <span className="text-[9px] text-white/80 uppercase tracking-wider block font-medium leading-none">Starts from</span>
           <span className="font-heading text-sm sm:text-base font-bold text-gold leading-tight block mt-0.5">{route.startingFare}</span>
         </div>
       </div>

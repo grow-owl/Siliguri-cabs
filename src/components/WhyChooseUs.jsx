@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={idx}
-                className="bg-charcoal-surface rounded-2xl p-6 sm:p-7 border border-white/10 hover:border-gold/50 shadow-luxury hover:shadow-luxury-hover transition-all duration-300 group flex flex-col justify-between"
+                className="bg-white/5 hover:bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-7 border border-white/15 hover:border-gold/50 shadow-luxury hover:shadow-luxury-hover transition-all duration-300 group flex flex-col justify-between"
               >
                 <div>
                   <div className="w-12 h-12 rounded-xl bg-gold/15 border border-gold/30 text-gold flex items-center justify-center mb-5 group-hover:bg-gold group-hover:text-charcoal transition-colors duration-300 shadow-sm">
@@ -81,7 +81,7 @@ export default function WhyChooseUs() {
         {/* Stats Strip */}
         <div className="mt-14 pt-10 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {stats.map((stat, i) => (
-            <div key={i} className="p-4 bg-white/5 rounded-2xl border border-white/10">
+            <div key={i} className="p-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:border-gold/30 transition-colors">
               <span className="font-heading text-3xl sm:text-4xl font-bold text-gold block">
                 {stat.value}
               </span>

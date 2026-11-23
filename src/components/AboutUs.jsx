@@ -29,7 +29,7 @@ export default function AboutUs() {
             </div>
 
             {/* Floating Experience Badge */}
-            <div className="absolute -bottom-6 -right-4 sm:right-6 bg-charcoal text-white p-4 sm:p-5 rounded-2xl border-2 border-gold shadow-luxury max-w-[200px] sm:max-w-[220px]">
+            <div className="absolute -bottom-6 -right-4 sm:right-6 bg-charcoal/80 backdrop-blur-md text-white p-4 sm:p-5 rounded-2xl border-2 border-gold/70 shadow-luxury max-w-[200px] sm:max-w-[220px]">
               <span className="font-heading text-3xl font-bold text-gold block">
                 {siteConfig.yearsExperience}
               </span>

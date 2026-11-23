@@ -43,8 +43,8 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-charcoal/95 backdrop-blur-md shadow-lg border-b border-white/10 py-3'
-            : 'bg-gradient-to-b from-charcoal/90 via-charcoal/70 to-transparent py-3.5 sm:py-4'
+            ? 'bg-charcoal/80 backdrop-blur-xl shadow-lg border-b border-white/15 py-3'
+            : 'bg-charcoal/40 backdrop-blur-md border-b border-white/10 py-3.5 sm:py-4'
         }`}
       >
         <div className="w-full px-4 sm:px-8 lg:px-12">
@@ -89,7 +89,7 @@ export default function Navbar() {
             <div className="hidden sm:flex items-center space-x-3 shrink-0">
               <a
                 href={`tel:${siteConfig.phoneRaw}`}
-                className="flex items-center space-x-2 px-3.5 py-2.5 rounded-xl text-xs font-semibold text-white/90 hover:text-white bg-white/10 hover:bg-white/20 border border-white/15 transition-all duration-150"
+                className="flex items-center space-x-2 px-3.5 py-2.5 rounded-xl text-xs font-semibold text-white/90 hover:text-white bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition-all duration-150"
                 title="Call 24/7 Desk"
               >
                 <Phone className="w-3.5 h-3.5 text-gold" />
@@ -137,7 +137,7 @@ export default function Navbar() {
         onClick={() => setMobileMenuOpen(false)}
       >
         <div
-          className={`fixed top-0 right-0 bottom-0 w-[82%] max-w-sm bg-charcoal-dark border-l border-white/10 p-6 flex flex-col justify-between transition-transform duration-300 ease-out safe-top safe-bottom ${
+          className={`fixed top-0 right-0 bottom-0 w-[82%] max-w-sm bg-charcoal/90 backdrop-blur-2xl border-l border-white/15 p-6 flex flex-col justify-between transition-transform duration-300 ease-out safe-top safe-bottom ${
             mobileMenuOpen ? 'translate-x-0 shadow-2xl' : 'translate-x-full'
           }`}
           onClick={(e) => e.stopPropagation()}

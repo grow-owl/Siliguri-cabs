@@ -34,15 +34,15 @@ export default function Hero() {
 
         {/* Quick Highlights Row */}
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm text-cream/90">
-          <div className="flex items-center space-x-2 bg-charcoal/60 px-3.5 py-1.5 rounded-full border border-white/10">
+          <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15">
             <ShieldCheck className="w-4 h-4 text-gold" />
             <span>Verified Hill Drivers</span>
           </div>
-          <div className="flex items-center space-x-2 bg-charcoal/60 px-3.5 py-1.5 rounded-full border border-white/10">
+          <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15">
             <Award className="w-4 h-4 text-gold" />
             <span>4.9 / 5 Top Rated Service</span>
           </div>
-          <div className="flex items-center space-x-2 bg-charcoal/60 px-3.5 py-1.5 rounded-full border border-white/10">
+          <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15">
             <CheckCircle2 className="w-4 h-4 text-gold" />
             <span>All-Inclusive Fixed Fares</span>
           </div>
@@ -57,7 +57,7 @@ export default function Hero() {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={`tel:${siteConfig.phoneRaw}`}
-            className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm border border-white/20 flex items-center justify-center space-x-2 transition-all active:scale-95"
+            className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-semibold text-sm border border-white/25 flex items-center justify-center space-x-2 transition-all active:scale-95"
           >
             <Phone className="w-4 h-4 text-gold" />
             <span>Call 24/7 Desk: {siteConfig.phone}</span>

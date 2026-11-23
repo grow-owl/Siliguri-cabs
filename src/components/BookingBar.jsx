@@ -67,7 +67,7 @@ export default function BookingBar() {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto bg-charcoal-surface/95 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-gold/30 shadow-2xl p-4 sm:p-7 text-white relative z-20">
+    <div className="w-full max-w-5xl mx-auto bg-charcoal/75 backdrop-blur-2xl rounded-2xl sm:rounded-3xl border border-white/20 shadow-2xl p-4 sm:p-7 text-white relative z-20">
       {/* Tabs */}
       <div className="flex flex-wrap items-center justify-center gap-2 mb-6 pt-2">
         {tripTabs.map((tab) => (
@@ -85,7 +85,7 @@ export default function BookingBar() {
             className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
               tripType === tab
                 ? 'bg-gold text-charcoal shadow-md scale-102 font-bold'
-                : 'bg-white/5 text-cream/75 hover:bg-white/10 hover:text-white'
+                : 'bg-white/10 backdrop-blur-md text-cream/80 hover:bg-white/20 hover:text-white border border-white/10'
             }`}
           >
             {tab}
@@ -106,7 +106,7 @@ export default function BookingBar() {
               <select
                 value={pickup}
                 onChange={(e) => setPickup(e.target.value)}
-                className="w-full bg-charcoal/80 border border-white/15 rounded-xl px-3.5 py-3 text-white text-sm focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
+                className="w-full bg-black/40 backdrop-blur-md border border-white/20 rounded-xl px-3.5 py-3 text-white text-sm focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
               >
                 {(pickupOptions[tripType] || pickupOptions['Outstation Cab']).map((opt) => (
                   <option key={opt} value={opt} className="bg-charcoal text-white">
@@ -130,7 +130,7 @@ export default function BookingBar() {
               <select
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
-                className="w-full bg-charcoal/80 border border-white/15 rounded-xl px-3.5 py-3 text-white text-sm focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
+                className="w-full bg-black/40 backdrop-blur-md border border-white/20 rounded-xl px-3.5 py-3 text-white text-sm focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
               >
                 {destinationOptions.map((opt) => (
                   <option key={opt} value={opt} className="bg-charcoal text-white">
@@ -155,7 +155,7 @@ export default function BookingBar() {
               value={travelDate}
               onChange={(e) => setTravelDate(e.target.value)}
               style={{ colorScheme: 'dark' }}
-              className="w-full bg-charcoal/80 border border-white/15 rounded-xl px-3.5 py-2.5 text-white text-sm focus:outline-none focus:border-gold transition-colors cursor-pointer"
+              className="w-full bg-black/40 backdrop-blur-md border border-white/20 rounded-xl px-3.5 py-2.5 text-white text-sm focus:outline-none focus:border-gold transition-colors cursor-pointer"
             />
           </div>
 
@@ -169,7 +169,7 @@ export default function BookingBar() {
               <select
                 value={passengers}
                 onChange={(e) => setPassengers(e.target.value)}
-                className="w-full bg-charcoal/80 border border-white/15 rounded-xl px-3.5 py-3 text-white text-sm focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
+                className="w-full bg-black/40 backdrop-blur-md border border-white/20 rounded-xl px-3.5 py-3 text-white text-sm focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
               >
                 <option value="1 - 3 Persons (Sedan)" className="bg-charcoal text-white">1 - 3 Persons (Sedan)</option>
                 <option value="4 - 6 Persons (Ertiga / Innova)" className="bg-charcoal text-white">4 - 6 Persons (Ertiga / Innova)</option>
@@ -193,7 +193,7 @@ export default function BookingBar() {
               <select
                 value={vehicle}
                 onChange={(e) => setVehicle(e.target.value)}
-                className="w-full bg-charcoal/80 border border-white/15 rounded-xl px-3.5 py-3 text-white text-sm focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
+                className="w-full bg-black/40 backdrop-blur-md border border-white/20 rounded-xl px-3.5 py-3 text-white text-sm focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
               >
                 {vehicleOptions.map((opt) => (
                   <option key={opt} value={opt} className="bg-charcoal text-white">

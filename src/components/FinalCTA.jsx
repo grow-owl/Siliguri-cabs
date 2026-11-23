@@ -44,7 +44,7 @@ export default function FinalCTA() {
         {/* 4 Feature Badges */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
           {ctaPillars.map((item, idx) => (
-            <div key={idx} className="bg-charcoal-surface text-white rounded-xl p-5 border border-white/10 shadow-lg text-left hover:border-gold/40 transition-colors">
+            <div key={idx} className="bg-white/5 hover:bg-white/10 backdrop-blur-md text-white rounded-xl p-5 border border-white/15 shadow-lg text-left hover:border-gold/40 transition-colors">
               <div className="w-8 h-8 rounded-lg bg-gold text-charcoal flex items-center justify-center font-bold text-xs mb-3">
                 ✓
               </div>
@@ -62,7 +62,7 @@ export default function FinalCTA() {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={`tel:${siteConfig.phoneRaw}`}
-            className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-base border border-white/20 flex items-center justify-center space-x-3 transition-all active:scale-95 shadow-lg"
+            className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-semibold text-base border border-white/25 flex items-center justify-center space-x-3 transition-all active:scale-95 shadow-lg"
           >
             <Phone className="w-5 h-5 text-gold" />
             <span>Call Now: {siteConfig.phone}</span>
