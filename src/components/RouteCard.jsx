@@ -13,7 +13,7 @@ export default function RouteCard({ route, isAirport = false }) {
 
   return (
     <div className="group bg-white rounded-2xl overflow-hidden border border-cream-dark/60 hover:border-gold/60 shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between">
-      {/* Clean Top Image */}
+      {/* Top Image with Price Badge */}
       <div className="relative h-44 sm:h-48 w-full overflow-hidden bg-charcoal">
         <img
           src={route.image}
@@ -21,33 +21,33 @@ export default function RouteCard({ route, isAirport = false }) {
           loading="lazy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent pointer-events-none" />
+
+        {/* Pricing on top of Image */}
+        <div className="absolute bottom-2.5 right-2.5 bg-charcoal/90 backdrop-blur-md border border-gold/40 px-3 py-1 rounded-lg text-right shadow-lg">
+          <span className="text-[9px] text-cream/70 uppercase tracking-wider block font-medium leading-none">Starts from</span>
+          <span className="font-heading text-sm sm:text-base font-bold text-gold leading-tight block mt-0.5">{route.startingFare}</span>
+        </div>
       </div>
 
       {/* Card Content */}
       <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
         <div>
-          {/* Destination Title & Price Header */}
-          <div className="flex items-start justify-between gap-3 pb-3 border-b border-cream-dark/60">
-            <div className="min-w-0 flex-1">
-              <h3 className="font-heading text-lg font-bold text-charcoal group-hover:text-gold-dark transition-colors truncate">
-                {route.from} to {route.to}
-              </h3>
-              <div className="flex items-center gap-2 mt-1 text-xs text-charcoal-light">
-                <span className="flex items-center space-x-1">
-                  <MapPin className="w-3.5 h-3.5 text-gold-dark shrink-0" />
-                  <span>{route.distance}</span>
-                </span>
-                <span>•</span>
-                <span className="flex items-center space-x-1">
-                  <Clock className="w-3.5 h-3.5 text-gold-dark shrink-0" />
-                  <span>{route.duration}</span>
-                </span>
-              </div>
-            </div>
-
-            <div className="text-right shrink-0 bg-cream px-2.5 py-1 rounded-lg border border-cream-dark/60">
-              <span className="text-[9px] text-charcoal-light uppercase tracking-wider block font-medium">Starts</span>
-              <span className="font-heading text-base font-bold text-charcoal block leading-none">{route.startingFare}</span>
+          {/* Destination Title & Route Info */}
+          <div className="pb-3 border-b border-cream-dark/60">
+            <h3 className="font-heading text-lg font-bold text-charcoal group-hover:text-gold-dark transition-colors truncate">
+              {route.from} to {route.to}
+            </h3>
+            <div className="flex items-center gap-2 mt-1.5 text-xs text-charcoal-light">
+              <span className="flex items-center space-x-1">
+                <MapPin className="w-3.5 h-3.5 text-gold-dark shrink-0" />
+                <span>{route.distance}</span>
+              </span>
+              <span>•</span>
+              <span className="flex items-center space-x-1">
+                <Clock className="w-3.5 h-3.5 text-gold-dark shrink-0" />
+                <span>Approx. {route.duration}</span>
+              </span>
             </div>
           </div>
 
