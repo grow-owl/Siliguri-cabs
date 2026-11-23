@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mobile & iOS optimization layer */
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior-y: none;
+}
+
+/* Ensure inputs on iOS Safari don't zoom automatically */
+input, select, textarea, button {
+  font-size: 16px;
+}
+
+@media (min-width: 640px) {
+  input, select, textarea {
+    font-size: 14px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F2EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A46D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A88750;
+}
+
+/* iOS Safe Area Padding Support */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
