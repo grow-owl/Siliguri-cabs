@@ -13,40 +13,41 @@ export default function RouteCard({ route, isAirport = false }) {
 
   return (
     <div className="group bg-white rounded-2xl overflow-hidden border border-cream-dark/60 hover:border-gold/60 shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between">
-      {/* Top Image + Badges */}
-      <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-charcoal">
+      {/* Clean Top Image */}
+      <div className="relative h-44 sm:h-48 w-full overflow-hidden bg-charcoal">
         <img
           src={route.image}
           alt={`${route.from} to ${route.to} cab service`}
           loading="lazy"
-          className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent" />
-
-        {/* Route Destination Title */}
-        <div className="absolute top-3 left-3 max-w-[85%] bg-charcoal/90 backdrop-blur-md text-white border border-gold/40 px-3.5 py-1.5 rounded-xl shadow-md font-heading font-bold text-xs sm:text-sm tracking-wide">
-          {route.from} to {route.to}
-        </div>
-
-        {/* Starting Fare Pill */}
-        <div className="absolute bottom-3 right-3 bg-charcoal/90 backdrop-blur-md border border-gold/40 px-3 py-1 rounded-lg text-right">
-          <span className="text-[10px] text-cream/70 block uppercase leading-none">Starting from</span>
-          <span className="text-gold font-bold text-sm sm:text-base leading-tight font-heading">{route.startingFare}</span>
-        </div>
       </div>
 
       {/* Card Content */}
       <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
         <div>
-          {/* Distance & Time Chips */}
-          <div className="flex items-center gap-3 text-xs text-charcoal-light pb-3 border-b border-cream-dark/50">
-            <div className="flex items-center space-x-1 bg-cream px-2.5 py-1 rounded-md font-medium">
-              <MapPin className="w-3.5 h-3.5 text-gold-dark shrink-0" />
-              <span>{route.distance}</span>
+          {/* Destination Title & Price Header */}
+          <div className="flex items-start justify-between gap-3 pb-3 border-b border-cream-dark/60">
+            <div className="min-w-0 flex-1">
+              <h3 className="font-heading text-lg font-bold text-charcoal group-hover:text-gold-dark transition-colors truncate">
+                {route.from} to {route.to}
+              </h3>
+              <div className="flex items-center gap-2 mt-1 text-xs text-charcoal-light">
+                <span className="flex items-center space-x-1">
+                  <MapPin className="w-3.5 h-3.5 text-gold-dark shrink-0" />
+                  <span>{route.distance}</span>
+                </span>
+                <span>•</span>
+                <span className="flex items-center space-x-1">
+                  <Clock className="w-3.5 h-3.5 text-gold-dark shrink-0" />
+                  <span>{route.duration}</span>
+                </span>
+              </div>
             </div>
-            <div className="flex items-center space-x-1 bg-cream px-2.5 py-1 rounded-md font-medium">
-              <Clock className="w-3.5 h-3.5 text-gold-dark shrink-0" />
-              <span>Approx. {route.duration}</span>
+
+            <div className="text-right shrink-0 bg-cream px-2.5 py-1 rounded-lg border border-cream-dark/60">
+              <span className="text-[9px] text-charcoal-light uppercase tracking-wider block font-medium">Starts</span>
+              <span className="font-heading text-base font-bold text-charcoal block leading-none">{route.startingFare}</span>
             </div>
           </div>
 
