@@ -23,28 +23,15 @@ export default function RouteCard({ route, isAirport = false }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent" />
 
-        {/* Route Category Tag */}
-        {route.tag && (
-          <div className="absolute top-3 left-3 bg-gold/90 backdrop-blur-md text-charcoal font-bold text-[11px] uppercase tracking-wider px-3 py-1 rounded-full shadow-md">
-            {route.tag}
-          </div>
-        )}
+        {/* Route Destination Title */}
+        <div className="absolute top-3 left-3 max-w-[85%] bg-charcoal/90 backdrop-blur-md text-white border border-gold/40 px-3.5 py-1.5 rounded-xl shadow-md font-heading font-bold text-xs sm:text-sm tracking-wide">
+          {route.from} to {route.to}
+        </div>
 
         {/* Starting Fare Pill */}
         <div className="absolute bottom-3 right-3 bg-charcoal/90 backdrop-blur-md border border-gold/40 px-3 py-1 rounded-lg text-right">
           <span className="text-[10px] text-cream/70 block uppercase leading-none">Starting from</span>
           <span className="text-gold font-bold text-sm sm:text-base leading-tight font-heading">{route.startingFare}</span>
-        </div>
-
-        {/* Origin to Destination overlaid title */}
-        <div className="absolute bottom-3 left-3 right-28">
-          <div className="flex items-center space-x-1 text-[11px] font-medium text-cream/80">
-            <span>{route.from}</span>
-            <span>➔</span>
-          </div>
-          <h3 className="font-heading text-lg sm:text-xl font-bold text-white tracking-tight truncate drop-shadow-sm">
-            {route.to}
-          </h3>
         </div>
       </div>
 
