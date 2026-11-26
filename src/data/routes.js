@@ -100,7 +100,7 @@ export const outstationRoutes = [
 export const airportRoutes = [
   {
     id: "ixb-gangtok",
-    from: "Bagdogra Airport (IXB)",
+    from: "IXB",
     to: "Gangtok",
     distance: "125 km",
     duration: "4.5 hrs",
@@ -112,7 +112,7 @@ export const airportRoutes = [
   },
   {
     id: "ixb-darjeeling",
-    from: "Bagdogra Airport (IXB)",
+    from: "IXB",
     to: "Darjeeling",
     distance: "70 km",
     duration: "2.5 hrs",
@@ -124,7 +124,7 @@ export const airportRoutes = [
   },
   {
     id: "ixb-kalimpong",
-    from: "Bagdogra Airport (IXB)",
+    from: "IXB",
     to: "Kalimpong",
     distance: "80 km",
     duration: "2.8 hrs",
@@ -136,7 +136,7 @@ export const airportRoutes = [
   },
   {
     id: "ixb-pelling",
-    from: "Bagdogra Airport (IXB)",
+    from: "IXB",
     to: "Pelling (West Sikkim)",
     distance: "135 km",
     duration: "5.0 hrs",
@@ -148,7 +148,7 @@ export const airportRoutes = [
   },
   {
     id: "ixb-mirik",
-    from: "Bagdogra Airport (IXB)",
+    from: "IXB",
     to: "Mirik",
     distance: "48 km",
     duration: "1.8 hrs",
@@ -160,7 +160,7 @@ export const airportRoutes = [
   },
   {
     id: "ixb-ravangla",
-    from: "Bagdogra Airport (IXB)",
+    from: "IXB",
     to: "Ravangla (Buddha Park)",
     distance: "120 km",
     duration: "4.5 hrs",
@@ -172,7 +172,7 @@ export const airportRoutes = [
   },
   {
     id: "ixb-namchi",
-    from: "Bagdogra Airport (IXB)",
+    from: "IXB",
     to: "Namchi (Char Dham)",
     distance: "100 km",
     duration: "3.5 hrs",
@@ -184,7 +184,7 @@ export const airportRoutes = [
   },
   {
     id: "ixb-lataguri",
-    from: "Bagdogra Airport (IXB)",
+    from: "IXB",
     to: "Lataguri (Dooars)",
     distance: "75 km",
     duration: "2.0 hrs",

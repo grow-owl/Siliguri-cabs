@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Clock, ShieldCheck, Phone, CheckCircle2, ArrowRight } from 'lucide-react';
+import { MapPin, Clock, Phone, CheckCircle2, Image as ImageIcon } from 'lucide-react';
 import { generateWhatsAppLink, siteConfig } from '../data/config';
 import WhatsAppIcon from './WhatsAppIcon';
 
@@ -12,16 +12,13 @@ export default function RouteCard({ route, isAirport = false }) {
   });
 
   return (
-    <div className="group bg-white rounded-2xl overflow-hidden border border-cream-dark/60 hover:border-gold/60 shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between">
-      {/* Top Image with Glass Price Badge */}
-      <div className="relative h-44 sm:h-48 w-full overflow-hidden bg-charcoal">
-        <img
-          src={route.image}
-          alt={`${route.from} to ${route.to} cab service`}
-          loading="lazy"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-black/20 pointer-events-none" />
+    <div className="group bg-white rounded-2xl overflow-hidden border border-cream-dark/60 hover:border-emerald-500/60 shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between">
+      {/* Top Image Placeholder with Glass Price Badge */}
+      <div className="relative h-44 sm:h-48 w-full overflow-hidden bg-gradient-to-br from-charcoal via-charcoal-light to-emerald-950 flex flex-col items-center justify-center border-b border-cream-dark/40">
+        <div className="flex flex-col items-center justify-center text-white/30 select-none">
+          <ImageIcon className="w-8 h-8 mb-1.5 stroke-[1.5]" />
+          <span className="text-[11px] font-medium tracking-wider uppercase">{route.to}</span>
+        </div>
 
         {/* Glassmorphism Price Badge on Top Left */}
         <div className="absolute top-3 left-3 bg-black/40 backdrop-blur-md border border-white/25 px-3 py-1.5 rounded-xl text-left shadow-lg">
@@ -35,17 +32,17 @@ export default function RouteCard({ route, isAirport = false }) {
         <div>
           {/* Destination Title & Route Info */}
           <div className="pb-3 border-b border-cream-dark/60">
-            <h3 className="font-heading text-lg font-bold text-charcoal group-hover:text-gold-dark transition-colors truncate">
+            <h3 className="font-heading text-lg font-bold text-charcoal group-hover:text-emerald-700 transition-colors leading-snug">
               {route.from} to {route.to}
             </h3>
             <div className="flex items-center gap-2 mt-1.5 text-xs text-charcoal-light">
               <span className="flex items-center space-x-1">
-                <MapPin className="w-3.5 h-3.5 text-gold-dark shrink-0" />
+                <MapPin className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                 <span>{route.distance}</span>
               </span>
               <span>•</span>
               <span className="flex items-center space-x-1">
-                <Clock className="w-3.5 h-3.5 text-gold-dark shrink-0" />
+                <Clock className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                 <span>Approx. {route.duration}</span>
               </span>
             </div>

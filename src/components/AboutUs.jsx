@@ -19,7 +19,7 @@ export default function AboutUs() {
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent" />
               
               <div className="absolute bottom-6 left-6 right-6 text-white">
-                <span className="text-gold-accent font-bold text-xs uppercase tracking-widest block">
+                <span className="text-emerald-400 font-bold text-xs uppercase tracking-widest block">
                   Rooted in Siliguri
                 </span>
                 <p className="font-heading text-xl sm:text-2xl font-bold mt-1">
@@ -28,12 +28,12 @@ export default function AboutUs() {
               </div>
             </div>
 
-            {/* Floating Experience Badge */}
-            <div className="absolute -bottom-6 -right-4 sm:right-6 bg-charcoal/80 backdrop-blur-md text-white p-4 sm:p-5 rounded-2xl border-2 border-gold/70 shadow-luxury max-w-[200px] sm:max-w-[220px]">
-              <span className="font-heading text-3xl font-bold text-gold-accent block">
+            {/* Floating Experience Badge - Top Left */}
+            <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-black/50 backdrop-blur-md text-white p-3.5 sm:p-4 rounded-2xl border border-emerald-400/50 shadow-luxury max-w-[190px] sm:max-w-[215px]">
+              <span className="font-heading text-2xl sm:text-3xl font-bold text-emerald-400 block leading-none">
                 {siteConfig.yearsExperience}
               </span>
-              <span className="text-xs text-cream/80 font-medium leading-tight block mt-0.5">
+              <span className="text-[11px] sm:text-xs text-white/85 font-medium leading-tight block mt-1">
                 Years of Excellence in Mountain Mobility
               </span>
             </div>
