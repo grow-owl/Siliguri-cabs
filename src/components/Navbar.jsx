@@ -20,7 +20,8 @@ export default function Navbar() {
     { name: 'Outstation Cabs', href: '#outstation' },
     { name: 'Airport Transfers', href: '#airport' },
     { name: 'Our Fleet', href: '#fleet' },
-    { name: 'Reviews', href: '#reviews' },
+    { name: 'About Us', href: '#about' },
+    { name: 'FAQs', href: '#faqs' },
   ];
 
   const handleLinkClick = (e, href) => {
