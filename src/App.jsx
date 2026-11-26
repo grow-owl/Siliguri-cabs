@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import WhyChooseUs from './components/WhyChooseUs';
 import OutstationRoutes from './components/OutstationRoutes';
 import AirportRoutes from './components/AirportRoutes';
 import FleetShowcase from './components/FleetShowcase';
@@ -27,9 +26,6 @@ export default function App() {
 
         {/* Bagdogra Airport Transfer Services */}
         <AirportRoutes />
-
-        {/* Why Discerning Travelers Choose HillWay */}
-        <WhyChooseUs />
 
         {/* Fleet Showcase */}
         <FleetShowcase />

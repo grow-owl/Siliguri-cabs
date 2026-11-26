@@ -55,7 +55,7 @@ export default function FAQAccordion() {
                   </span>
                   <div
                     className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'bg-gold text-charcoal rotate-180' : 'bg-cream text-charcoal-light'
+                      isOpen ? 'bg-gold text-white rotate-180' : 'bg-cream text-charcoal-light'
                     }`}
                   >
                     <ChevronDown className="w-4 h-4" />
@@ -86,9 +86,9 @@ export default function FAQAccordion() {
             href="https://wa.me/917719199000?text=Hello%20HillWay%20Cabs,%20I%20have%20a%20question%20regarding%20cab%20booking."
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap px-5 py-2.5 rounded-xl bg-gold hover:bg-gold-dark text-charcoal font-bold text-xs flex items-center space-x-2 transition-all active:scale-95"
+            className="whitespace-nowrap px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center space-x-2 transition-all active:scale-95"
           >
-            <WhatsAppIcon className="w-4 h-4 fill-charcoal shrink-0" />
+            <WhatsAppIcon className="w-4 h-4 fill-white shrink-0" />
             <span>Ask on WhatsApp</span>
           </a>
         </div>

@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
                 className="bg-white/5 hover:bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-7 border border-white/15 hover:border-gold/50 shadow-luxury hover:shadow-luxury-hover transition-all duration-300 group flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-gold/15 border border-gold/30 text-gold flex items-center justify-center mb-5 group-hover:bg-gold group-hover:text-charcoal transition-colors duration-300 shadow-sm">
+                  <div className="w-12 h-12 rounded-xl bg-gold/15 border border-gold/30 text-gold flex items-center justify-center mb-5 group-hover:bg-gold group-hover:text-white transition-colors duration-300 shadow-sm">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="font-heading text-xl font-bold text-white mb-2.5 group-hover:text-gold transition-colors">

@@ -84,8 +84,8 @@ export default function BookingBar() {
             }}
             className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
               tripType === tab
-                ? 'bg-gold text-charcoal shadow-md scale-102 font-bold'
-                : 'bg-white/10 backdrop-blur-md text-cream/80 hover:bg-white/20 hover:text-white border border-white/10'
+                ? 'bg-emerald-600 text-white shadow-md scale-102 font-bold'
+                : 'bg-white/10 backdrop-blur-md text-white/80 hover:bg-white/20 hover:text-white border border-white/10'
             }`}
           >
             {tab}
@@ -212,9 +212,9 @@ export default function BookingBar() {
         <div className="pt-4 flex items-center justify-center border-t border-white/10">
           <button
             type="submit"
-            className="w-full sm:w-auto px-10 py-3.5 rounded-xl font-bold text-charcoal bg-gradient-to-r from-gold via-gold-light to-gold hover:brightness-110 active:scale-98 shadow-gold-glow transition-all duration-200 flex items-center justify-center space-x-2.5 text-sm sm:text-base cursor-pointer"
+            className="w-full sm:w-auto px-10 py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 hover:brightness-110 active:scale-98 shadow-gold-glow transition-all duration-200 flex items-center justify-center space-x-2.5 text-sm sm:text-base cursor-pointer"
           >
-            <WhatsAppIcon className="w-4 h-4 fill-charcoal shrink-0" />
+            <WhatsAppIcon className="w-4 h-4 fill-white shrink-0" />
             <span>Check Fares on WhatsApp</span>
             <ArrowRight className="w-4 h-4" />
           </button>

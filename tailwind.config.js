@@ -8,21 +8,21 @@ export default {
     extend: {
       colors: {
         charcoal: {
-          DEFAULT: '#202020',
-          dark: '#141414',
-          light: '#2d2d2d',
-          surface: '#1c1c1c'
+          DEFAULT: '#0F1F18', // Deep Himalayan Pine Forest
+          dark: '#091410',    // Deepest Forest Night
+          light: '#1E352B',   // Muted Pine Slate (for secondary text/elements)
+          surface: '#14261E'  // Elevated Forest Surface
         },
         gold: {
-          DEFAULT: '#C5A46D',
-          light: '#D8BC88',
-          dark: '#A88750',
-          accent: '#E6CF9B'
+          DEFAULT: '#059669', // Royal Emerald primary
+          light: '#10B981',   // Vibrant Emerald Green
+          dark: '#047857',    // Deep Forest Emerald
+          accent: '#34D399'   // Glowing Mint Emerald
         },
         cream: {
-          DEFAULT: '#F6F2EA',
-          light: '#FAF7F2',
-          dark: '#EBE4D5'
+          DEFAULT: '#F0F7F3', // Soft Misty Sage
+          light: '#F7FBF9',   // Crisp Nature White-Mint
+          dark: '#DCEBE2'     // Subtle Sage Border/Surface
         }
       },
       fontFamily: {
@@ -31,8 +31,8 @@ export default {
       },
       boxShadow: {
         'luxury': '0 10px 30px -10px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04)',
-        'luxury-hover': '0 20px 40px -15px rgba(197, 164, 109, 0.25), 0 8px 16px -4px rgba(0, 0, 0, 0.08)',
-        'gold-glow': '0 0 25px -5px rgba(197, 164, 109, 0.4)',
+        'luxury-hover': '0 20px 40px -15px rgba(5, 150, 105, 0.3), 0 8px 16px -4px rgba(0, 0, 0, 0.08)',
+        'gold-glow': '0 0 25px -5px rgba(16, 185, 129, 0.45)',
       }
     },
   },

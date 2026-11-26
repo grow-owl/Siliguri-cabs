@@ -42,7 +42,7 @@ export default function OutstationRoutes() {
                 onClick={() => setFilter(cat)}
                 className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
                   filter === cat
-                    ? 'bg-charcoal text-gold shadow-md scale-102'
+                    ? 'bg-charcoal text-gold-accent shadow-md scale-102 font-bold'
                     : 'bg-white text-charcoal-light hover:bg-cream border border-cream-dark/60'
                 }`}
               >

@@ -10,7 +10,7 @@ export default function Reviews() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center space-x-1.5 px-3.5 py-1 rounded-full bg-gold/20 text-gold-dark font-semibold text-xs tracking-wider uppercase mb-3">
-            <Star className="w-3.5 h-3.5 fill-gold-dark text-gold-dark" />
+            <Star className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
             <span>Verified Passenger Experiences</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal tracking-tight">
@@ -44,9 +44,9 @@ export default function Reviews() {
             >
               <div>
                 {/* 5 Stars */}
-                <div className="flex items-center space-x-1 text-gold">
+                <div className="flex items-center space-x-1 text-amber-400">
                   {[...Array(rev.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
 

@@ -23,9 +23,9 @@ export default function FloatingMobileBar() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center space-x-2 py-3 rounded-xl bg-gradient-to-r from-gold via-gold-light to-gold text-charcoal font-extrabold text-xs shadow-gold-glow active:scale-98 transition-transform"
+          className="flex items-center justify-center space-x-2 py-3 rounded-xl bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 text-white font-extrabold text-xs shadow-gold-glow active:scale-98 transition-transform"
         >
-          <WhatsAppIcon className="w-4 h-4 fill-charcoal shrink-0" />
+          <WhatsAppIcon className="w-4 h-4 fill-white shrink-0" />
           <span>WhatsApp</span>
         </a>
       </div>

@@ -26,14 +26,14 @@ input, select, textarea, button {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #F6F2EA;
+  background: #F0F7F3;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C5A46D;
+  background: #059669;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #A88750;
+  background: #047857;
 }
 
 /* iOS Safe Area Padding Support */

@@ -26,7 +26,7 @@ export default function RouteCard({ route, isAirport = false }) {
         {/* Glassmorphism Price Badge on Top Left */}
         <div className="absolute top-3 left-3 bg-black/40 backdrop-blur-md border border-white/25 px-3 py-1.5 rounded-xl text-left shadow-lg">
           <span className="text-[9px] text-white/80 uppercase tracking-wider block font-medium leading-none">Starts from</span>
-          <span className="font-heading text-sm sm:text-base font-bold text-gold leading-tight block mt-0.5">{route.startingFare}</span>
+          <span className="font-heading text-sm sm:text-base font-bold text-emerald-400 leading-tight block mt-0.5">{route.startingFare}</span>
         </div>
       </div>
 
@@ -85,10 +85,10 @@ export default function RouteCard({ route, isAirport = false }) {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center space-x-1.5 py-2.5 rounded-xl bg-gold hover:bg-gold-dark text-charcoal font-bold text-xs shadow-sm hover:shadow transition-all active:scale-95"
+            className="flex items-center justify-center space-x-1.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-sm hover:shadow transition-all active:scale-95"
             title="Enquire on WhatsApp"
           >
-            <WhatsAppIcon className="w-3.5 h-3.5 fill-current shrink-0" />
+            <WhatsAppIcon className="w-3.5 h-3.5 fill-white shrink-0" />
             <span>Book Ride</span>
           </a>
         </div>

@@ -46,7 +46,7 @@ export default function FleetShowcase() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent" />
                     
-                    <span className="absolute top-3 right-3 bg-black/40 backdrop-blur-md border border-white/25 text-gold text-[11px] font-bold px-3 py-1 rounded-full shadow-md uppercase tracking-wider">
+                    <span className="absolute top-3 right-3 bg-black/40 backdrop-blur-md border border-white/25 text-gold-accent text-[11px] font-bold px-3 py-1 rounded-full shadow-md uppercase tracking-wider">
                       {car.badge}
                     </span>
 
@@ -91,7 +91,7 @@ export default function FleetShowcase() {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-2.5 rounded-xl bg-charcoal hover:bg-charcoal-light text-gold font-bold text-xs flex items-center justify-center space-x-2 transition-colors active:scale-95 shadow-sm"
+                    className="w-full py-2.5 rounded-xl bg-emerald-950 hover:bg-emerald-900 text-emerald-400 font-bold text-xs flex items-center justify-center space-x-2 transition-colors active:scale-95 shadow-sm border border-emerald-700/40"
                   >
                     <WhatsAppIcon className="w-3.5 h-3.5 fill-current shrink-0" />
                     <span>Enquire for {car.category}</span>

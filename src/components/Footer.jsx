@@ -8,7 +8,7 @@ export default function Footer() {
     { name: 'Outstation Cabs', href: '#outstation' },
     { name: 'Bagdogra Airport Transfers', href: '#airport' },
     { name: 'Vehicle Fleet', href: '#fleet' },
-    { name: 'Why Choose Us', href: '#why-us' },
+    { name: 'About Us', href: '#about' },
     { name: 'Frequently Asked Questions', href: '#faqs' },
     { name: 'Reviews', href: '#reviews' },
   ];
@@ -27,18 +27,18 @@ export default function Footer() {
   return (
     <footer className="bg-charcoal-dark text-white pt-14 pb-24 sm:pb-14 border-t border-white/10 relative">
       {/* Checkered taxi border accent on top of footer */}
-      <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-gold via-white to-gold" />
+      <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-600 via-emerald-300 to-emerald-600" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           {/* Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2.5">
-              <div className="w-9 h-9 rounded-xl bg-gold flex items-center justify-center text-charcoal font-bold shadow-gold-glow">
+              <div className="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-bold shadow-lg shadow-emerald-500/30">
                 H
               </div>
               <span className="font-heading text-2xl font-bold text-white">
-                HillWay<span className="text-gold">.Cabs</span>
+                HillWay<span className="text-emerald-400">.Cabs</span>
               </span>
             </div>
             <p className="text-xs sm:text-sm text-cream/70 leading-relaxed font-light">
