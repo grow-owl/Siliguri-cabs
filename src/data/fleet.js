@@ -33,15 +33,15 @@ export const fleetData = [
     image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80"
   },
   {
-    id: "tempo",
-    category: "Luxury Tempo Traveller",
-    models: "Force Traveller (12, 17, 26 Seater)",
-    capacity: "12 to 26 Passengers",
-    luggage: "10+ Large Bags in dedicated boot",
-    idealFor: "Large family weddings, corporate offsites, college & group tours",
-    badge: "Group Travel",
-    features: ["Pushback Luxury Seats", "LED TV & Surround Music", "Dedicated Luggage Chamber", "Experienced Long-Route Crew"],
-    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=600&q=80"
+    id: "scorpio",
+    category: "7-Seater Hill SUV",
+    models: "Mahindra Scorpio / Xylo",
+    capacity: "7 Passengers",
+    luggage: "4 Large Bags + Roof Carrier",
+    idealFor: "Steep mountain passes, family adventures, and group hill tours",
+    badge: "7-Seater Hill SUV",
+    features: ["High Ground Clearance", "Powerful 4WD / Hill Torque", "Spacious 7-Seater Cabin", "Roof Luggage Carrier"],
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Mahindra_Scorpio.jpg?width=800"
   }
 ];
 

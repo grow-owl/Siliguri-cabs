@@ -18,7 +18,7 @@ export default function App() {
       <Navbar />
 
       <main className="flex-1">
-        {/* Hero with Interactive Booking Engine */}
+        {/* Hero Section */}
         <Hero />
 
         {/* Siliguri to Outstation Cabs */}

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MapPin, Clock, Phone, CheckCircle2, Image as ImageIcon } from 'lucide-react';
 import { generateWhatsAppLink, siteConfig } from '../data/config';
 import WhatsAppIcon from './WhatsAppIcon';
 
 export default function RouteCard({ route, isAirport = false }) {
+  const [imgError, setImgError] = useState(false);
   const whatsappUrl = generateWhatsAppLink({
     tripType: isAirport ? 'Airport Transfer' : 'Outstation Cab',
     pickup: route.from,
@@ -13,18 +14,31 @@ export default function RouteCard({ route, isAirport = false }) {
 
   return (
     <div className="group bg-white rounded-2xl overflow-hidden border border-cream-dark/60 hover:border-emerald-500/60 shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between">
-      {/* Top Image Placeholder with Glass Price Badge */}
+      {/* Destination Image */}
       <div className="relative h-44 sm:h-48 w-full overflow-hidden bg-gradient-to-br from-charcoal via-charcoal-light to-emerald-950 flex flex-col items-center justify-center border-b border-cream-dark/40">
-        <div className="flex flex-col items-center justify-center text-white/30 select-none">
-          <ImageIcon className="w-8 h-8 mb-1.5 stroke-[1.5]" />
-          <span className="text-[11px] font-medium tracking-wider uppercase">{route.to}</span>
-        </div>
+        {route.image && !imgError ? (
+          <>
+            <img
+              src={route.image}
+              alt={`${route.to} — ${route.tag}`}
+              loading="lazy"
+              onError={() => setImgError(true)}
+              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/15 pointer-events-none" />
+          </>
+        ) : (
+          <div className="flex flex-col items-center justify-center text-white/30 select-none">
+            <ImageIcon className="w-8 h-8 mb-1.5 stroke-[1.5]" />
+            <span className="text-[11px] font-medium tracking-wider uppercase">{route.to}</span>
+          </div>
+        )}
 
-        {/* Glassmorphism Price Badge on Top Left */}
-        <div className="absolute top-3 left-3 bg-black/40 backdrop-blur-md border border-white/25 px-3 py-1.5 rounded-xl text-left shadow-lg">
-          <span className="text-[9px] text-white/80 uppercase tracking-wider block font-medium leading-none">Starts from</span>
-          <span className="font-heading text-sm sm:text-base font-bold text-emerald-400 leading-tight block mt-0.5">{route.startingFare}</span>
-        </div>
+        {route.tag && (
+          <span className="absolute bottom-3 left-3 bg-black/55 backdrop-blur-md border border-white/20 text-white text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full">
+            {route.tag}
+          </span>
+        )}
       </div>
 
       {/* Card Content */}
